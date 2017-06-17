@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		div {
+			position: relative;
+			right: 30px;
+			top: 30px;
+			float: right;
+			width: 200px;
+			height: 200px;
+			background: yellowgreen;
+			border: 10px solid grey;
+			margin-left: 120px;
+/*			padding-left: 20px;*/
+		}
+		img {
+/*			padding-left: 20px;*/
+/*			float: left;*/
+/*
+			width: 158px;
+			height: 98px;
+*/
+			border: 10px solid  grey;
+				
+		}
+		span {
+			display: inline-block;
+			width: 200px;
+			height: 200px;
+			background: yellowgreen;
+			border: 10px solid grey;
+		}
+	</style>
+	<script>
+		window.onload = function(){
+			var oDiv = document.getElementsByTagName("div")[0];
+			alert(oDiv.offsetLeft);
+		}
+	</script>
+</head>
+<body>
+	<div></div>
+<!--	<img src="bg3.jpg" alt="" >-->
+<!--<span></span>-->
+</body>
+</html>

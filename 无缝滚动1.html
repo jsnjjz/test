@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		div {
+			position: relative;
+			margin: 200px;
+			width: 712px;
+			height: 108px;
+			background: yellowgreen;
+		}
+		ul {
+			position: absolute;
+		}
+		li {
+			list-style: none;
+/*			float: left;*/
+		}
+	</style>
+	<script>
+			window.onload = function(){
+				var aLi = document.querySelectorAll("li");
+//				var aLi = document.getElementsByTagName("li");
+//				alert(aLi);
+				for(i=0; i<aLi.length; i++){
+					aLi[i].style.height = 300+"px";
+				}
+			}
+	</script>
+</head>
+<body>
+	<div>
+		<ul>
+			<li><img src="image2/1.jpg" alt=""></li>
+			<li><img src="image2/2.jpg" alt=""></li>
+			<li><img src="image2/3.jpg" alt=""></li>
+			<li><img src="image2/4.jpg" alt=""></li>
+		</ul>
+	</div>
+</body>
+</html>

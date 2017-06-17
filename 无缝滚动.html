@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		div {
+			position: relative;
+			margin: 100px;
+			width: 712px;
+			height: 108px;
+/*			background: yellowgreen;*/
+			overflow: hidden;
+		}
+		ul {
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		li {
+			float: left;
+			padding-left: 20px;
+/*			margin-left: 20px;*/
+		}
+	</style>
+	<script>
+		window.onload = function(){
+			var oDiv = document.getElementsByTagName("div")[0];
+			var oUl = document.getElementsByTagName("ul")[0];
+			var aLi = document.getElementsByTagName("li");
+			var speed = 4;
+			oUl.innerHTML += oUl.innerHTML;
+			oUl.style.width = aLi[0].offsetWidth*aLi.length+"px";
+		
+			setInterval(function move(){
+				if (oUl.offsetLeft > 0) {
+					oUl.style.left = -oUl.offsetWidth/2+"px";
+				}
+				
+				if(oUl.offsetLeft < -oUl.offsetWidth/2){
+					oUl.style.left = 0;
+				}
+				
+				oUl.style.left = oUl.offsetLeft+speed+"px";
+			},30)
+		}
+	</script>
+</head>
+<body>
+	<div>
+		<ul>
+			<li><img src="image2/1.jpg" alt=""></li>
+			<li><img src="image2/2.jpg" alt=""></li>
+			<li><img src="image2/3.jpg" alt=""></li>
+			<li><img src="image2/4.jpg" alt=""></li>
+		</ul>
+	</div>
+</body>
+</html>

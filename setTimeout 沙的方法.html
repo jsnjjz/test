@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		var i = 0;
+function set(){
+    setTimeout(function(){
+        if(i<5){
+            i++;
+            set();
+            console.log(i);
+					i = 0;
+					
+					
+        }
+    },1000)
+}
+set();
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

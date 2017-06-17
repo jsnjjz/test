@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div {
+			width: 200px;
+			height: 300px;
+			background: hotpink;
+		}
+	</style>
+	<script src="getstyle.js"></script>
+	<script>
+		window.onload = function(){
+			var oDiv = document.getElementsByTagName("div")[0];
+			alert(getstyle(oDiv,"position"));
+		}
+	</script>
+</head>
+<body>
+	<div>
+		
+	</div>
+</body>
+</html>
